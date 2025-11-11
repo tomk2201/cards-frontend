@@ -1,44 +1,33 @@
-# cards-frontend
+Interfejs użytkownika dla aplikacji do zarządzania kartami, stworzony w Vue.js 3 (Composition API) z użyciem Pinia i Tailwind CSS.
 
-This template should help get you started developing with Vue 3 in Vite.
+**Link do repozytorium API:** [cards-api](https://github.com/tomk2201/cards-api)
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Uruchomienie
 
-## Recommended Browser Setup
+**Wymagania:** Upewnij się, że backend (API) jest uruchomiony i działa.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+1.  **Sklonuj repozytorium**
+    ```bash
+    git clone https://github.com/tomk2201/cards-frontend.git
+    cd cards-frontend
+    ```
 
-## Customize configuration
+2.  **Zainstaluj zależności NPM**
+    ```bash
+    npm install
+    ```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+3.  **Skonfiguruj plik środowiskowy `.env`**
+    *   Stwórz plik `.env` w głównym folderze projektu.
+    *   Dodaj do niego następującą zmienną, wskazującą na adres działającego API:
+    ```
+    VITE_API_BASE_URL=http://127.0.0.1:8000
+    ```
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+4.  **Uruchom serwer deweloperski Vite**
+    ```bash
+    npm run dev
+    ```
+    Aplikacja będzie dostępna pod adresem wskazanym w terminalu
